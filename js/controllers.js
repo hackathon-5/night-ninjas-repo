@@ -4,11 +4,14 @@
   angular
     .module('badActors')
     .controller('MainController', function ($scope, MainService, $rootScope, $location) {
-        $rootScope.actor = "Nicolas Cage";
 
         $scope.isCollapsed = false;
 
         $scope.actors = MainService.getActors();
+        $scope.viewActor = function(name){
+          $rootScope.actor = name;
+          $location.path('/movieView');
+        }
 
         if($location.path() === '/movieView'){
             console.log($rootScope.actor);

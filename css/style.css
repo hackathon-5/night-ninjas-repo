@@ -52,9 +52,9 @@ header {
 
 .info {
   margin: 1rem;
-=======
+}
 .navigation{
-  font-family: 'Skranji', cursive;
+  font-family: 'Tienne', serif;
   border-radius: 2%;
   padding: 1%;
 }
@@ -77,7 +77,7 @@ header {
 .navigation a:hover{
   text-decoration: none;
   color: white;
->>>>>>> 930e2e8238b51eef4dd354627073bdd5054944ad
+
 }
 .navigation h3{
   display: inline-block;
