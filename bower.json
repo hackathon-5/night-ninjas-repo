@@ -1,0 +1,26 @@
+{
+  "name": "Bad Actors",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hackathon-5/night-ninjas-repo",
+  "authors": [
+    "glasser1988@gmail.com",
+    "trossys@gmail.com"
+  ],
+  "description": "It's the worst of every one of the worst actors.",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.13.3",
+    "angular-slick": "~0.2.1",
+    "angular-route": "~1.4.5",
+    "bootstrap": "~3.3.5",
+    "wow": "~1.1.2"
+  }
+}
