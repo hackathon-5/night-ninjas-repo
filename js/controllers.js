@@ -5,6 +5,8 @@
     .module('badActors')
     .controller('MainController', function ($scope, MainService, $rootScope, $location) {
 
+        $scope.demo = {};
+
         $scope.actors = MainService.getActors();
         $scope.viewActor = function(actor){
           $rootScope.actor = actor;
