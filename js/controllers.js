@@ -4,9 +4,10 @@
   angular
     .module('badActors')
     .controller('MainController', function ($scope, MainService, $rootScope, $location) {
-        $rootScope.actor = "Nicolas Cage";
+        $rootScope.actor = "Ashton Kutcher";
 
-
+        $scope.actors = MainService.getActors();
+        
         if($location.path() === '/movieView'){
             console.log($rootScope.actor);
             var nameArray = $rootScope.actor.split(" ")
@@ -21,6 +22,7 @@
         }
         $scope.newMovie = function(){
           var number = Math.floor(Math.random() * ($scope.movies.length - 1));
+
           $scope.movie= $scope.movies[number];
         }
     })
