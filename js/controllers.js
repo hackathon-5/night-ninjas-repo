@@ -17,7 +17,7 @@
         }
         if($location.path() === '/movieView'){
 
-            console.log($rootScope.actor);
+
             var nameArray = $rootScope.actor.name.split(" ")
             MainService.getMovies(nameArray).then(function(data) {
               $scope.movies = data.data;
@@ -41,7 +41,7 @@
           else{
             do{
               var number = Math.floor(Math.random() * ($scope.movies.length - 1));
-              console.log($scope.movies[number].show_title)
+              
             }
             while($scope.movie.show_title === $scope.movies[number].show_title)
           }
