@@ -14,14 +14,11 @@
           $location.path('/');
         }
         if($location.path() === '/movieView'){
-            console.log($rootScope.actor);
             var nameArray = $rootScope.actor.name.split(" ")
             MainService.getMovies(nameArray).then(function(data) {
-              console.log(data.data);
               $scope.movies = data.data;
               var number = Math.floor(Math.random() * (data.data.length - 1));
               $scope.movie= data.data[number];
-                console.log("movie: ", $scope.movie);
             })
 
         }
