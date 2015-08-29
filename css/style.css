@@ -14,7 +14,7 @@ header {
 }
 
 .cardInside {
-  min-height: 20rem;
+  min-height: 30rem;
   margin: 2rem;
   display: flex;
   background-color: green;
@@ -34,7 +34,6 @@ header {
   margin-right: auto;
 }
 
-
 .cardImg {
   display: block;
   margin-left: auto;
@@ -51,6 +50,7 @@ header {
 .info {
   margin: 1rem;
 }
+
 
 .navigation{
   background-color: #8B4C39;
