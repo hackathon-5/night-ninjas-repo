@@ -3,7 +3,7 @@
     <div class="cardInside">
       <div class="cardImgWrap">
         <div ng-click="isCollapsed = !isCollapsed" class="full">
-          <img class="cardImg" src="http://www.placecage.com/200/200" alt="" />
+          <img class="cardImg" ng-src="{{actor.headshot_url}}" alt="" />
           <h2 class="actorName">{{actor.name}}</h2>
        </div>
 	      <div collapse="!isCollapsed">
@@ -15,6 +15,9 @@
 		     </div>
 	     </div>
      </div>
+   </div>
+   <div class="opBar">
+
    </div>
  </div>
 </div>
