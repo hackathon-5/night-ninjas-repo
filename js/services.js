@@ -29,8 +29,8 @@
             birthday: 'February 7, 1978'
           },
           {
-            name: 'Shia LeBeauf',
-            headshot_url: 'img/lebeauf.jpg',
+            name: 'Shia LeBeouf',
+            headshot_url: 'img/labeouf.jpg',
             bio: 'Shia Saide LaBeouf is an American actor and director who became known among younger audiences as Louis Stevens in the Disney Channel series Even Stevens',
             birthday: 'June 11, 1986'
           },
@@ -48,7 +48,7 @@
           },
           {
             name: 'Zac Efron',
-            headshot_url: 'img/efron',
+            headshot_url: 'img/efron.jpg',
             bio: 'Zachary David Alexander "Zac" Efron (born October 18, 1987)[2] is an American actor and singer. He began acting professionally in the early 2000s, and became known as a teen idol after his lead roles in the Disney Channel Original Movie High School Musical, the WB series Summerland, and the 2007 film version of the Broadway musical Hairspray.[3][4][5] Efron has since starred in the films 17 Again, Me and Orson Welles, Charlie St. Cloud, New Year\'s Eve, The Lucky One, That Awkward Moment, Neighbors, and The Lorax.',
             birthday: 'October 18, 1987'
           },
@@ -95,7 +95,7 @@
             birthday: ' April 9, 1990'
           },
           {
-            name: 'Lindsey Lohan',
+            name: 'Lindsay Lohan',
             headshot_url: 'img/lohan.jpg',
             bio: "Lindsay Dee Lohan is an American actress, singer, songwriter, model, director and producer, whose career has included critical and popular success in her youth, followed by a period of substance abuse and legal troubles that have been well-documented in the tabloids.",
             birthday: 'July 2, 1986'
@@ -138,7 +138,8 @@
           },
           {
             name: 'Miley Cyrus',
-            headshot_url: 'Miley Ray Cyrus (born as Destiny Hope Cyrus) is an American singer, songwriter, and actress. Her father is country singer Billy Ray Cyrus. She held minor roles in the television series Doc and the film Big Fish in her childhood. In 2006, Cyrus rose to prominence as a teen idol after being cast in the Disney Channel television series Hannah Montana, in which she portrayed the starring character Miley Stewart.',
+            headshot_url: 'img/cyrus.jpg',
+            bio: 'Miley Ray Cyrus (born as Destiny Hope Cyrus) is an American singer, songwriter, and actress. Her father is country singer Billy Ray Cyrus. She held minor roles in the television series Doc and the film Big Fish in her childhood. In 2006, Cyrus rose to prominence as a teen idol after being cast in the Disney Channel television series Hannah Montana, in which she portrayed the starring character Miley Stewart.',
             birthday: 'November 23, 1992'
           }
         ]
