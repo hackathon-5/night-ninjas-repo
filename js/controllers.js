@@ -10,7 +10,9 @@
           $rootScope.actor = actor;
           $location.path('/movieView');
         }
-
+        if($rootScope.actor === undefined) {
+          $location.path('/');
+        }
         if($location.path() === '/movieView'){
             console.log($rootScope.actor);
             var nameArray = $rootScope.actor.name.split(" ")
