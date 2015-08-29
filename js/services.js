@@ -29,7 +29,7 @@
             birthday: 'February 7, 1978'
           },
           {
-            name: 'Shia LeBeouf',
+            name: 'Shia LaBeouf',
             headshot_url: 'img/labeouf.jpg',
             bio: 'Shia Saide LaBeouf is an American actor and director who became known among younger audiences as Louis Stevens in the Disney Channel series Even Stevens',
             birthday: 'June 11, 1986'
