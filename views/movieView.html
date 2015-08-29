@@ -1,0 +1,19 @@
+<div class="datBadActor">
+  <h2>{{actor}}</h2>
+</div>
+
+<div class="datBadMovie">
+    <div class="cols-md-3">
+        <img ng-src={{movie.poster}} err-src="http://www.moxmultisport.com/wp-content/uploads/no-image.jpg" alt="" />
+    </div>
+    <div class="cols-md-9">
+      <h4><strong>Title: </strong>{{movie.show_title}}</h4>
+      <h4><strong>Category: </strong>{{movie.category}}</h4>
+      <h4><strong>Release Year: </strong>{{movie.release_year}}</h4>
+      <h4><strong>Rating: </strong>{{movie.rating}}</h4>
+      <h4><strong>Summary: </h4><h6>{{movie.summary}}</h6>
+      <a href="http://www.netflix.com/watch/{{movie.show_id}}" target="_blank"><h4>Watch On Netflix</h4></a>
+      <button type="button" name="button" ng-click="newMovie()">Another Bad Movie</button>
+    </div>
+
+</div>
