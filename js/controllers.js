@@ -3,7 +3,9 @@
 
   angular
     .module('badActors')
-    .controller('MainController', function ($scope, MainService, $rootScope, $location) {
+    .controller('MainController', function ($scope, MainService, $rootScope, $location, $interval, $window) {
+
+        $scope.demo = {};
 
         $scope.actors = MainService.getActors();
         $scope.viewActor = function(actor){
@@ -14,6 +16,8 @@
           $location.path('/');
         }
         if($location.path() === '/movieView'){
+
+            console.log($rootScope.actor);
             var nameArray = $rootScope.actor.name.split(" ")
             MainService.getMovies(nameArray).then(function(data) {
               $scope.movies = data.data;
@@ -28,6 +32,7 @@
           $scope.movie= $scope.movies[number];
         }
     })
+
 
     .directive('errSrc', function() {
       return {
