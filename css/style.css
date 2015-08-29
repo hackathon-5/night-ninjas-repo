@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #E7E7E7;
 }
 
 header {
@@ -9,16 +10,29 @@ header {
   display: flex;
 }
 
+.film {
+  color: black;
+  font-size: 3rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
 .cardWrap {
-  background-color: white;
+  background-color: #E7E7E7;
   transition: ease-in .4s;
 }
 
+.card {
+  padding: 0;
+  margin: 2rem 2rem 2rem 2rem;
+  box-shadow:3px 3px 5px 6px #ccc;
+  border-top: 3px solid red;
+}
+
 .cardInside {
-  min-height: 30rem;
-  margin: 2rem 2rem 0rem 2rem;
+  min-height: 28rem;
   display: flex;
-  background-color: green;
+  background-color: white;
   border-radius:5px 5px 0px 0px;
 }
 
@@ -30,10 +44,12 @@ header {
 }
 
 .opBar {
-  background-color: blue;
+  border-top: 1px solid grey;
+  background-color: white;
   height: 5rem;
-  margin: 0rem 2rem;
+  margin: 0;
   border-radius: 0px 0px 5px 5px;
+  font-size: 3rem;
 }
 
 .full {
@@ -59,9 +75,10 @@ header {
   margin: 1rem;
 }
 
-
 .navigation{
-  background-color: #8B4C39;
+  font-family: 'Tienne', serif;
+  border-radius: 2%;
+  padding: 1%;
 }
 .appName{
   display:inline-block;
@@ -72,7 +89,9 @@ header {
   display:inline-block;
   text-align: right;
   width:68%;
-
+}
+.goHome h4{
+    font-size: 2em;
 }
 .navigation a{
   color: black;
@@ -80,4 +99,11 @@ header {
 .navigation a:hover{
   text-decoration: none;
   color: white;
+
+
+}
+.navigation h3{
+  display: inline-block;
+  margin-right: 2%;
+  font-size: 3em;
 }
