@@ -22,7 +22,7 @@
           template: '<h2>Sorry, page not found</h2>'
         })
         .otherwise({
-          redirectTo: '/404'
+          redirectTo: '/'
         });
     });
       angular
