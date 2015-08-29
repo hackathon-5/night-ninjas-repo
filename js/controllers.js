@@ -8,9 +8,6 @@
 
         $scope.isCollapsed = false;
 
-
-
-
         if($location.path() === '/movieView'){
             console.log($rootScope.actor);
             var nameArray = $rootScope.actor.split(" ")
