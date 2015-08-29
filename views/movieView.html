@@ -1,19 +1,18 @@
-<div class="datBadActor">
-  <h2>{{actor}}</h2>
-</div>
-
-<div class="datBadMovie">
-    <div class="cols-md-3">
-        <img ng-src={{movie.poster}} err-src="http://www.moxmultisport.com/wp-content/uploads/no-image.jpg" alt="" />
+<div class="container">
+        <div class="col-md-3">
+            <h4>{{actor}}</h4>
+            <img class="img-responsive img-thumbnail" ng-src={{movie.poster}} err-src="" alt=""/>
+        </div>
+        <div class="col-md-9">
+          <h4>{{movie.show_title}} <small>{{movie.release_year}}</small></h4>
+          <h5>{{movie.category}}</h5>
+          <h4><span class="glyphicon glyphicon-star" aria-hidden="true"></span>{{movie.rating}}</h4>
+          <ul class="list-group">
+            <li class="list-group-item">
+              {{movie.summary}}
+            </li>
+          </ul>
+          <a class='btn btn-danger btn-block' role='button' href="http://www.netflix.com/watch/{{movie.show_id}}" target="_blank"><h4>Watch On Netflix</h4></a>
+          <a href="" class="btn btn-success btn-block" role='button' ng-click="newMovie()"><h4>Another Bad Movie</h4></a>
+        </div>
     </div>
-    <div class="cols-md-9">
-      <h4><strong>Title: </strong>{{movie.show_title}}</h4>
-      <h4><strong>Category: </strong>{{movie.category}}</h4>
-      <h4><strong>Release Year: </strong>{{movie.release_year}}</h4>
-      <h4><strong>Rating: </strong>{{movie.rating}}</h4>
-      <h4><strong>Summary: </h4><h6>{{movie.summary}}</h6>
-      <a href="http://www.netflix.com/watch/{{movie.show_id}}" target="_blank"><h4>Watch On Netflix</h4></a>
-      <button type="button" name="button" ng-click="newMovie()">Another Bad Movie</button>
-    </div>
-
-</div>
