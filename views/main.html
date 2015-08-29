@@ -1,22 +1,17 @@
-
 <div class="row">
-  <div class="wow fadeIn col-xs-12 col-md-4 cardWrap" ng-repeat="actor in actors">
+  <div class="col-xs-12 col-sm-6 col-md-4 cardWrap" ng-repeat="actor in actors">
+    <div class="card">
     <div class="cardInside">
       <div class="cardImgWrap">
-    <div ng-click="isCollapsed = !isCollapsed" class="full">
-        <img class="cardImg" ng-src="{{actor.headshot_url}}" alt="" />
-          <i class="icon-long-arrow-right" ng-click=viewActor(actor)></i>
-      <h2 class="actorName">{{actor.name}}</h2>
+        <div class="full" ng-click=viewActor(actor)>
+          <img class="cardImg" ng-src="{{actor.headshot_url}}" alt="" />
+          <h2 class="actorName">{{actor.name}}</h2>
+       </div>
+     </div>
    </div>
-	<div collapse="!isCollapsed">
-		<div class="well well-lg info">
-      <h4>Born:</h4>
-      {{actor.birthday}}
-		  <h4>Bio:</h4>
-      {{actor.bio}}
-		</div>
-	</div>
-    </div>
-    </div>
-  </div>
+   <div class="opBar">
+     <i class="fa fa-film film" ng-click=viewActor(actor.name)></i>
+   </div>
+ </div>
+</div>
 </div>

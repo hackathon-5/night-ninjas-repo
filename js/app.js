@@ -5,7 +5,8 @@
     .module('badActors', [
       'ngRoute',
       'ui.bootstrap',
-      'ngAnimate'
+      'ngAnimate',
+      'ngMaterial'
     ])
     .config(function ($routeProvider) {
       $routeProvider
