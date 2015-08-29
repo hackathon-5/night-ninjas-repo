@@ -1,5 +1,7 @@
 .navigation{
-  background-color: #8B4C39;
+  font-family: 'Skranji', cursive;
+  border-radius: 2%;
+  padding: 1%;
 }
 .appName{
   display:inline-block;
@@ -10,7 +12,9 @@
   display:inline-block;
   text-align: right;
   width:68%;
-
+}
+.goHome h4{
+    font-size: 2em;
 }
 .navigation a{
   color: black;
@@ -18,4 +22,9 @@
 .navigation a:hover{
   text-decoration: none;
   color: white;
+}
+.navigation h3{
+  display: inline-block;
+  margin-right: 2%;
+  font-size: 3em;
 }
