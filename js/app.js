@@ -12,7 +12,8 @@
           templateUrl: 'views/main.html',
           controller: 'MainController'
         })
-        .when('/movie',{
+
+        .when('/movieView',{
           templateUrl: 'views/movieView.html',
           controller: 'MainController'
         })
