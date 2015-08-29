@@ -4,7 +4,8 @@
   angular
     .module('badActors', [
       'ngRoute',
-      'ui.bootstrap'
+      'ui.bootstrap',
+      'ngAnimate'
     ])
     .config(function ($routeProvider) {
       $routeProvider
@@ -12,6 +13,7 @@
           templateUrl: 'views/main.html',
           controller: 'MainController'
         })
+
         .when('/movieView',{
           templateUrl: 'views/movieView.html',
           controller: 'MainController'

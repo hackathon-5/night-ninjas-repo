@@ -17,8 +17,8 @@
     "tests"
   ],
   "dependencies": {
+    "angular-animate": "~1.4.5",
     "angular-bootstrap": "~0.13.3",
-    "angular-slick": "~0.2.1",
     "angular-route": "~1.4.5",
     "bootstrap": "~3.3.5",
     "wow": "~1.1.2"
