@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Bad Actors</title>
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="bower_components/animate.css/animate.css">
   <link rel="stylesheet" href="css/style.css">
@@ -21,14 +22,93 @@
   </div>
 </div>
 
+<!-- <div>
+  <md-content>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <a href="#/" >
+          <h2>BadActors<span class="icon-thumbs-down icon-2x"></span></a></h2>
+        <span flex></span>
+        <a href="#/"><md-button class="md-icon-button">
+          Home
+        </md-button></a>
+      </div>
+    </md-toolbar>
+  </md-content>
+</div> -->
+<!--
+
+<div ng-controller="AppCtrl" layout="column" style="height:500px;">
+  <section layout="row" flex>
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+      <md-toolbar class="md-theme-indigo">
+        <h1 class="md-toolbar-tools">Sidenav Left</h1>
+      </md-toolbar>
+      <md-content layout-padding ng-controller="LeftCtrl">
+        <md-button ng-click="close()" class="md-primary" hide-gt-md>
+          Close Sidenav Left
+        </md-button>
+        <p hide-md show-gt-md>
+          This sidenav is locked open on your device. To go back to the default behavior,
+          narrow your display.
+        </p>
+      </md-content>
+    </md-sidenav>
+    <md-content flex layout-padding>
+      <div layout="column" layout-fill layout-align="top center">
+        <p>
+        The left sidenav will 'lock open' on a medium (>=960px wide) device.
+        </p>
+        <p>
+        The right sidenav will focus on a specific child element.
+        </p>
+        <div>
+          <md-button ng-click="toggleLeft()"
+            class="md-primary" hide-gt-md>
+            Toggle left
+          </md-button>
+        </div>
+        <div>
+          <md-button ng-click="toggleRight()"
+            class="md-primary">
+            Toggle right
+          </md-button>
+        </div>
+      </div>
+      <div flex></div>
+    </md-content>
+    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+      <md-toolbar class="md-theme-light">
+        <h1 class="md-toolbar-tools">Sidenav Right</h1>
+      </md-toolbar>
+      <md-content ng-controller="RightCtrl" layout-padding>
+        <form>
+          <md-input-container>
+            <label for="testInput">Test input</label>
+            <input type="text" id="testInput"
+                   ng-model="data" md-sidenav-focus>
+          </md-input-container>
+        </form>
+        <md-button ng-click="close()" class="md-primary">
+          Close Sidenav Right
+        </md-button>
+      </md-content>
+    </md-sidenav>
+  </section>
+</div> -->
+
+
 
 <body ng-app="badActors">
   <ng-view></ng-view>
 </body>
 
-
 <script src="bower_components/angular/angular.js" charset="utf-8"></script>
 <script src="bower_components/angular-route/angular-route.js" charset="utf-8"></script>
+
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+
 <script src="bower_components/angular-bootstrap/ui-bootstrap.js" charset="utf-8"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script type="text/javascript" src="bower_components/wow/dist/wow.js"></script>

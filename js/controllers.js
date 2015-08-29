@@ -7,6 +7,7 @@
 
         $scope.isCollapsed = false;
 
+
         $scope.actors = MainService.getActors();
         $scope.viewActor = function(name){
           $rootScope.actor = name;
@@ -31,6 +32,7 @@
           $scope.movie= $scope.movies[number];
         }
     })
+
     .directive('errSrc', function() {
       return {
         link: function(scope, element, attrs) {
