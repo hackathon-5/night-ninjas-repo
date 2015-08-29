@@ -3,7 +3,11 @@
 
   angular
     .module('badActors')
-    .factory('MainService', function ($scope, $rootScope) {
+    .factory('MainService', function ($http, $rootScope) {
+
+      return {
+
+      };
 
     })
 })();

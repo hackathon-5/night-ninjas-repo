@@ -4,8 +4,7 @@
   angular
     .module('badActors', [
       'ngRoute',
-      'ui.bootstrap',
-      'slick'
+      'ui.bootstrap'
     ])
     .config(function ($routeProvider) {
       $routeProvider
@@ -13,7 +12,7 @@
           templateUrl: 'views/main.html',
           controller: 'MainController'
         })
-        .when('/',{
+        .when('/movie',{
           templateUrl: 'views/movieView.html',
           controller: 'MainController'
         })
