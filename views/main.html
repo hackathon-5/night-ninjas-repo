@@ -4,8 +4,8 @@
     <div class="cardInside">
       <div class="cardImgWrap">
     <div ng-click="isCollapsed = !isCollapsed" class="full">
+      <i class="icon-long-arrow-right seeMovie" ng-click=viewActor(actor)></i>
         <img class="cardImg" ng-src="{{actor.headshot_url}}" alt="" />
-          <i class="icon-long-arrow-right" ng-click=viewActor(actor)></i>
       <h2 class="actorName">{{actor.name}}</h2>
    </div>
 	<div collapse="!isCollapsed">
