@@ -4,6 +4,7 @@
   angular
     .module('badActors')
     .factory('MainService', function ($http, $rootScope) {
+
         var getMovies = function(nameArray){
           console.log("nameArray: ", nameArray);
           var url = 'http://netflixroulette.net/api/api.php?actor=';
@@ -150,5 +151,7 @@
           getMovies: getMovies,
           getActors: getActors
         };
+
+
     })
 })();

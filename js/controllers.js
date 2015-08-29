@@ -4,10 +4,12 @@
   angular
     .module('badActors')
     .controller('MainController', function ($scope, MainService, $rootScope, $location) {
-        $rootScope.actor = "Ashton Kutcher";
+        $rootScope.actor = "Nicolas Cage";
+
+        $scope.isCollapsed = false;
 
         $scope.actors = MainService.getActors();
-        
+
         if($location.path() === '/movieView'){
             console.log($rootScope.actor);
             var nameArray = $rootScope.actor.split(" ")
