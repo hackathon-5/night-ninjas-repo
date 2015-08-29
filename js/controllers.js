@@ -5,8 +5,6 @@
     .module('badActors')
     .controller('MainController', function ($scope, MainService, $rootScope, $location) {
 
-        $scope.isCollapsed = false;
-
         $scope.actors = MainService.getActors();
         $scope.viewActor = function(actor){
           $rootScope.actor = actor;
@@ -31,6 +29,7 @@
           $scope.movie= $scope.movies[number];
         }
     })
+
     .directive('errSrc', function() {
       return {
         link: function(scope, element, attrs) {
