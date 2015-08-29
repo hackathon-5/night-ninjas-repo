@@ -6,7 +6,6 @@
     .factory('MainService', function ($http, $rootScope) {
 
         var getMovies = function(nameArray){
-          console.log("nameArray: ", nameArray);
           var url = 'http://netflixroulette.net/api/api.php?actor=';
           if(nameArray.length === 3){
             url = url + nameArray[0] + '%20' + nameArray[1] + '%20' + nameArray[2];
@@ -137,8 +136,6 @@
             birthday: 'November 23, 1992'
           }
         ]
-        console.log(array)
-
           return array;
         }
 
