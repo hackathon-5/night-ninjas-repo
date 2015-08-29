@@ -1,0 +1,21 @@
+.navigation{
+  background-color: #8B4C39;
+}
+.appName{
+  display:inline-block;
+  width:30%;
+
+}
+.goHome{
+  display:inline-block;
+  text-align: right;
+  width:68%;
+
+}
+.navigation a{
+  color: black;
+}
+.navigation a:hover{
+  text-decoration: none;
+  color: white;
+}
