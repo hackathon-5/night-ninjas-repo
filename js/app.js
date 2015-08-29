@@ -6,6 +6,7 @@
       'ngRoute',
       'ui.bootstrap',
       'ngAnimate',
+      'angular-loading-bar',
       'ngMaterial'
     ])
     .config(function ($routeProvider) {
@@ -14,7 +15,10 @@
           templateUrl: 'views/main.html',
           controller: 'MainController'
         })
-
+        .when('/splash',{
+          templateUrl: 'views/splash.html',
+          controller: 'MainController'
+        })
         .when('/movieView',{
           templateUrl: 'views/movieView.html',
           controller: 'MainController'
