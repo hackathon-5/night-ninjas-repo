@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
   padding: 0;
   margin: 0;
@@ -33,7 +32,6 @@ header {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  display: inline-block;
 }
 
 
@@ -52,7 +50,8 @@ header {
 
 .info {
   margin: 1rem;
-=======
+}
+
 .navigation{
   background-color: #8B4C39;
 }
@@ -73,5 +72,4 @@ header {
 .navigation a:hover{
   text-decoration: none;
   color: white;
->>>>>>> 930e2e8238b51eef4dd354627073bdd5054944ad
 }
