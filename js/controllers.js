@@ -5,18 +5,15 @@
     .module('badActors')
     .controller('MainController', function ($scope, MainService, $rootScope, $location) {
 
-        $scope.isCollapsed = false;
-
-
         $scope.actors = MainService.getActors();
-        $scope.viewActor = function(name){
-          $rootScope.actor = name;
+        $scope.viewActor = function(actor){
+          $rootScope.actor = actor;
           $location.path('/movieView');
         }
 
         if($location.path() === '/movieView'){
             console.log($rootScope.actor);
-            var nameArray = $rootScope.actor.split(" ")
+            var nameArray = $rootScope.actor.name.split(" ")
             MainService.getMovies(nameArray).then(function(data) {
               console.log(data.data);
               $scope.movies = data.data;
