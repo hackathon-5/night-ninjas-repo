@@ -118,6 +118,10 @@ header {
   font-size: 3em;
 }
 
+
+.seeMovie{
+  margin-left: 90%;
+}
 /* Splash */
 
 .splashTitle {
@@ -180,6 +184,7 @@ header {
 }
 .tabsdemoDynamicHeight md-content h1:first-child {
   margin-top: 0;
+
 }
 
 .tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button, .tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {

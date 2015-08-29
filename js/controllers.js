@@ -27,7 +27,24 @@
 
         }
         $scope.newMovie = function(){
-          var number = Math.floor(Math.random() * ($scope.movies.length - 1));
+          if($scope.movies.length === 2){
+            if($scope.movie.show_title === $scope.movies[0].show_title){
+              var number = 1;
+            }
+            else{
+              var number = 0;
+            }
+          }
+          else if($scope.movies.length === 1){
+            return alert("Only One Bad Movie Available");
+          }
+          else{
+            do{
+              var number = Math.floor(Math.random() * ($scope.movies.length - 1));
+              console.log($scope.movies[number].show_title)
+            }
+            while($scope.movie.show_title === $scope.movies[number].show_title)
+          }
 
           $scope.movie= $scope.movies[number];
         }
