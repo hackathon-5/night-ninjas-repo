@@ -118,8 +118,25 @@ header {
   font-size: 3em;
 }
 
+
 .seeMovie{
   margin-left: 90%;
+}
+/* Splash */
+
+.splashTitle {
+  margin-top: 25rem;
+  text-align: center;
+  font-size: 6rem;
+}
+
+.splash {
+  background-color: #E7E7E7;
+}
+
+.splashBox {
+  border: 1px solid #E7E7E7;
+
 }
 
 /* Material */
@@ -128,6 +145,16 @@ header {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.front {
+  z-index: 20;
+}
+
+.progs {
+  position: absolute;
+  margin-top: 5rem;
+  z-index: 0;
 }
 
 .carddemoBasicUsage md-card {
@@ -160,3 +187,22 @@ header {
   margin-top: 0;
 
 }
+
+.tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button, .tooltipdemoBasicUsage md-toolbar .md-toolbar-tools .md-button:hover {
+  box-shadow: none;
+  border: none;
+  transform: none;
+  -webkit-transform: none; }
+.tooltipdemoBasicUsage .left {
+  top: 70px !important;
+  left: 56px !important; }
+.tooltipdemoBasicUsage .right {
+  top: 70px !important;
+  right: 56px !important; }
+
+.progressCirculardemoBasicUsage body {
+  padding: 20px; }
+.progressCirculardemoBasicUsage h4 {
+  margin: 10px 0; }
+.progressCirculardemoBasicUsage md-progress-circular {
+  margin-bottom: 20px; }
